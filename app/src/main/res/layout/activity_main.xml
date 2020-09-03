@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/floating"
+        android:layout_marginTop="20dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2082087661861644/8090297378">
+    </com.google.android.gms.ads.AdView>
+
+
+      <androidx.recyclerview.widget.RecyclerView
+         android:id="@+id/recycler"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="15dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"/>
+
+       <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/floating"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="bottom|right"
+           android:layout_margin="16dp"
+           android:src="@drawable/add"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentBottom="true"
+           app:layout_anchorGravity="bottom|right|end" />
+
+       <ImageView
+           android:id="@+id/img"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="50dp"
+           android:layout_centerInParent="true"
+           android:src="@drawable/list"
+           />
+
+
+
+
+</RelativeLayout>
